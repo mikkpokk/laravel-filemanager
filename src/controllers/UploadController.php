@@ -55,14 +55,18 @@ class UploadController extends LfmController
 
         event(new ImageIsUploading($new_file_path));
         try {
-            if ($this->fileIsImage($file)) {
+            if ($this->fileIsImage($file) && $file->getMimeType() != 'image/svg+xml') {
                 Image::make($file->getRealPath())
                     ->orientate() //Apply orientation from exif data
                     ->save($new_file_path, 90);
 
                 $this->makeThumb($new_filename);
             } else {
-                File::move($file->path(), $new_file_path);
+                $move = File::move($file->path(), str_replace($new_filename, '', $new_file_path).'thumbs/'.$new_filename);
+
+                if ($move) {
+                    File::copy(str_replace($new_filename, '', $new_file_path).'thumbs/'.$new_filename, $new_file_path);
+                }
             }
         } catch (\Exception $e) {
             return $this->error('invalid');
