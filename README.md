@@ -3,22 +3,22 @@
 This package is re-development. Original package has been forked from UniSharp/laravel-filemanager.
 
 # Laravel Filemanager installation
- * composer require mikkpokk/laravel-filemanager
- * Add new providers into app/config.php file:
+(1) composer require mikkpokk/laravel-filemanager 
+(2) Add new providers into app/config.php file:
 
     IntEServices\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
     Intervention\Image\ImageServiceProvider::class,
 
- * Add class alias into app/config.php file:
+(3) Add class alias into app/config.php file:
 
     'Image' => Intervention\Image\Facades\Image::class,
 
- * Publish the package’s config and assets
+(4) Publish the package’s config and assets
 
     php artisan vendor:publish --tag=lfm_config
     php artisan vendor:publish --tag=lfm_public
 
- * Ensure that the files & images directories (in config/lfm.php) are writable by your web server(run commands like chown or chmod).
+(5) Ensure that the files & images directories (in config/lfm.php) are writable by your web server(run commands like chown or chmod).
 
 ## v1.7.1 released
  * Mime type: image/svg upload problem has been fixed
