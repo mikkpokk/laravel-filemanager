@@ -1,14 +1,27 @@
-# Laravel Filemanager
-[![Latest Stable Version](https://poser.pugx.org/unisharp/laravel-filemanager/v/stable)](https://packagist.org/packages/unisharp/laravel-filemanager)
-[![Total Downloads](https://poser.pugx.org/unisharp/laravel-filemanager/downloads)](https://packagist.org/packages/unisharp/laravel-filemanager)
-[![License](https://poser.pugx.org/unisharp/laravel-filemanager/license)](https://packagist.org/packages/unisharp/laravel-filemanager)
+# Larvel Filemanager
 
- * Document : [unisharp.github.io/laravel-filemanager](http://unisharp.github.io/laravel-filemanager/)
- * Demo : [Laravel Filemanager container](https://github.com/UniSharp/laravel-filemanager-example-5.3)
+This package is re-development. Original package has been forked from UniSharp/laravel-filemanager.
+
+# Laravel Filemanager installation
+ * composer require mikkpokk/laravel-filemanager
+ * Add new providers into app/config.php file:
+
+    IntEServices\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
+    Intervention\Image\ImageServiceProvider::class,
+
+ * Add class alias into app/config.php file:
+
+    'Image' => Intervention\Image\Facades\Image::class,
+
+ * Publish the package’s config and assets
+
+    php artisan vendor:publish --tag=lfm_config
+    php artisan vendor:publish --tag=lfm_public
+
+ * Ensure that the files & images directories (in config/lfm.php) are writable by your web server(run commands like chown or chmod).
 
 ## v1.7.1 released
- * Important changes :
-  * Mime type: image/svg upload problem has been fixed
+ * Mime type: image/svg upload problem has been fixed
 
 ## Features
  * CKEditor and TinyMCE integration
@@ -20,25 +33,13 @@
  * Supports two types : files and images. Each type works in different directory.
  * Supported locales : ar, bg, de, el, en, es, fa, fr, he, hu, nl, pl, pt-BR, pt_PT, ro, ru, tr, zh-CN, zh-TW
 
-PR is welcome!
-
-## Screenshots
-> Standalone button :
-
-![Standalone button demo](https://unisharp.github.io/laravel-filemanager/images/lfm01.png)
-
-> Grid view :
-
-![Grid view demo](https://unisharp.github.io/laravel-filemanager/images/lfm02.png)
-
-> List view :
-
-![List view demo](https://unisharp.github.io/laravel-filemanager/images/lfm03.png)
+Pull requests are welcome!
   
 ## Credits
 Special thanks to
 
- * [All contibutors](https://github.com/UniSharp/laravel-filemanager/graphs/contributors) from GitHub. (issues / PR)
+ * [All UniSharp/laravel-filemanager contibutors](https://github.com/UniSharp/laravel-filemanager/graphs/contributors) from GitHub. (issues / PR)
  * [@taswler](https://github.com/tsawler) the original author.
  * [@olivervogel](https://github.com/olivervogel) for the awesome [image library](https://github.com/Intervention/image).
  * All [@UniSharp](https://github.com/UniSharp) members.
+ * [All mikkpokk/laravel-filemanager contibutors](https://github.com/mikkpokk/laravel-filemanager/graphs/contributors) from GitHub. (issues / PR)
