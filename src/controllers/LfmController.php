@@ -1,10 +1,12 @@
-<?php namespace Unisharp\Laravelfilemanager\controllers;
+<?php
 
-use Unisharp\Laravelfilemanager\traits\LfmHelpers;
+namespace IntEServices\Laravelfilemanager\controllers;
+
+use IntEServices\Laravelfilemanager\traits\LfmHelpers;
 
 /**
  * Class LfmController
- * @package Unisharp\Laravelfilemanager\controllers
+ * @package IntEServices\Laravelfilemanager\controllers
  */
 class LfmController extends Controller
 {

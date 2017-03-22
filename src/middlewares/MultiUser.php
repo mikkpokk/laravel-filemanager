@@ -1,8 +1,8 @@
 <?php
 
-namespace Unisharp\Laravelfilemanager\middlewares;
+namespace IntEServices\Laravelfilemanager\middlewares;
 
-use Unisharp\Laravelfilemanager\traits\LfmHelpers;
+use IntEServices\Laravelfilemanager\traits\LfmHelpers;
 use Closure;
 
 class MultiUser

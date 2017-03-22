@@ -1,10 +1,12 @@
-<?php namespace Unisharp\Laravelfilemanager\controllers;
+<?php
+
+namespace IntEServices\Laravelfilemanager\controllers;
 
 use Illuminate\Support\Facades\File;
 
 /**
  * Class FolderController
- * @package Unisharp\Laravelfilemanager\controllers
+ * @package IntEServices\Laravelfilemanager\controllers
  */
 class FolderController extends LfmController
 {

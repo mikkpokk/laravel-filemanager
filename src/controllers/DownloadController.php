@@ -1,8 +1,10 @@
-<?php namespace Unisharp\Laravelfilemanager\controllers;
+<?php
+
+namespace IntEServices\Laravelfilemanager\controllers;
 
 /**
  * Class DownloadController
- * @package Unisharp\Laravelfilemanager\controllers
+ * @package IntEServices\Laravelfilemanager\controllers
  */
 class DownloadController extends LfmController
 {

@@ -1,12 +1,12 @@
 ## List of events
- * Unisharp\Laravelfilemanager\Events\ImageIsUpload
- * Unisharp\Laravelfilemanager\Events\ImageWasUploaded
- * Unisharp\Laravelfilemanager\Events\ImageIsRenaming
- * Unisharp\Laravelfilemanager\Events\ImageWasRenamed
- * Unisharp\Laravelfilemanager\Events\ImageIsDeleting
- * Unisharp\Laravelfilemanager\Events\ImageWasDeleted
- * Unisharp\Laravelfilemanager\Events\FolderIsRenaming
- * Unisharp\Laravelfilemanager\Events\FolderWasRenamed
+ * IntEServices\Laravelfilemanager\Events\ImageIsUpload
+ * IntEServices\Laravelfilemanager\Events\ImageWasUploaded
+ * IntEServices\Laravelfilemanager\Events\ImageIsRenaming
+ * IntEServices\Laravelfilemanager\Events\ImageWasRenamed
+ * IntEServices\Laravelfilemanager\Events\ImageIsDeleting
+ * IntEServices\Laravelfilemanager\Events\ImageWasDeleted
+ * IntEServices\Laravelfilemanager\Events\FolderIsRenaming
+ * IntEServices\Laravelfilemanager\Events\FolderWasRenamed
 
 ## How to use
  * To use events you can add a listener to listen to the events.

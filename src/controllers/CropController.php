@@ -1,11 +1,13 @@
-<?php namespace Unisharp\Laravelfilemanager\controllers;
+<?php
 
-use Unisharp\Laravelfilemanager\controllers\Controller;
+namespace IntEServices\Laravelfilemanager\controllers;
+
+use IntEServices\Laravelfilemanager\controllers\Controller;
 use Intervention\Image\Facades\Image;
 
 /**
  * Class CropController
- * @package Unisharp\Laravelfilemanager\controllers
+ * @package IntEServices\Laravelfilemanager\controllers
  */
 class CropController extends LfmController
 {

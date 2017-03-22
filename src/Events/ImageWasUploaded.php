@@ -1,6 +1,6 @@
 <?php
 
-namespace Unisharp\Laravelfilemanager\Events;
+namespace IntEServices\Laravelfilemanager\Events;
 
 class ImageWasUploaded
 {
